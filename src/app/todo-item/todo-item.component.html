@@ -1,0 +1,12 @@
+<div class="card mb-3">
+    <div class="card-body">
+       <div class="form-check">
+         <input class="form-check-input" type="checkbox" [(ngModel)]="task.completed" (change)="onComplete()">
+         <label class="form-check-label">
+           {{ task.text }}
+         </label>
+         <button class="btn btn-danger btn-sm float-end" (click)="onDelete()">Delete</button>
+       </div>
+    </div>
+   </div>
+   
