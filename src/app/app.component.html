@@ -1,14 +1,17 @@
+<!-- app.component.html -->
 <div class="container">
   <div class="row">
      <div id="logo" class="col-12">
-       <h1 class="text-center my-4"> <img  class="brand-logo" src="../assets/logo.svg" alt="logo" height="64px" width="auto">  Routine Tracker</h1>
+       <h1 class="text-center my-4">
+         <img class="brand-logo" src="../assets/logo.svg" alt="logo" height="64px" width="auto"> Routine Tracker
+       </h1>
      </div>
   </div>
   <div class="row">
      <div class="col-12">
-       <app-todo-list></app-todo-list>
+       <app-login-form *ngIf="!authService.isLoggedIn"></app-login-form>
+       <app-todo-list *ngIf="authService.isLoggedIn"></app-todo-list>
      </div>
   </div>
  </div>
-
  

@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 
@@ -19,6 +21,7 @@ import { TodoItemComponent } from './todo-item/todo-item.component';
     TodoListComponent,
     TodoItemComponent,
     CommonModule,
+    HttpClientModule,
  ],
  providers: [],
  bootstrap: [AppComponent]
